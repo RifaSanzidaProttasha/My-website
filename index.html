@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Basic Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <div class="headersection template clear">
+        <div class="logo">
+		    <img src="images/9e5d3c62-5e4c-4829-9629-fec5b2f6b81c.png" alt="Logo"/>
+		    <h2>Website Title</h2>
+		    <p>Website description</p>
+        </div>
+		
+		
+	   <div class="navsection template clear">
+	        <ul>
+		       <li><a href="#">Home</a></li>
+		       <li><a href="#">About</a></li>
+		   	   <li><a href="#">Vlog</a></li>
+		       <li><a href="#">Privacy</a></li>
+		</ul> 
+    </div>		
+		    <img src="images/social/e7c15488d7a9ef341d79bbe19c5bac30.jpg" alt="Facebook"/>
+		    <img src="images/social/9ffc17d8234d69587aea04dff27e9abc.jpg" alt="Youtube"/>
+		    <img src="images/social/5d63c857404bab94c94a3f5b719628f2.jpg" alt="Tiktok"/>
+		    <img src="images/social/c8b8129127bada9fa699aeba388b3b2b.jpg" alt="Google"/>	
+		</div>
+		</div>
+
+		
+	<div class="navsection template clear">
+	    <ul>
+
+	</div>
+	<div class="slideshow-container template">
+
+    <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="images/50964dd2dde0828247aaf26f697f93aa.jpg" alt="Slide 1">
+        <div class="text">Welcome</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+       <img src="images/cf951fb8a38144ec2366d1d8930dd47f.jpg" alt="Slide 2"> 
+        <div class="text">Desserts</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/ce5f151f2eebe49b9ffe33a74172fd01.jpg" alt="Slide 3">
+        <div class="text">Enjoy!</div>
+    </div>
+
+</div>
+
+<div style="text-align:center;">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+	 <div class="contentsection template clear">
+	    <div class="maincontent clear">
+		<div class="samepost clear">
+		<h2> Pudding </h2>
+	<a href="#">
+		<img src="images/images/417e6f1d63874614deb94f0f8fe6f85b.jpg" alt="Post Image">
+	</a>
+	   <p>
+		    Some text will go here.
+		    Some text will go here.
+		    Some text will go here.
+		    Some text will go here.
+		    Some text will go here.
+		    Some text will go here.
+		    Some text will go here.
+		    Some text will go here.
+	  </p>
+        <div class="readmore clear">
+		    <a href="#">Read More</a>
+		</div>
+	</div>
+				<div class="samepost clear">
+		<h2> Cupcake </h2>
+	<a href="#">
+		<img src="images/images/9daa7e95d6a8b500b535a3e1a22400b7.jpg"alt="Post Image">
+	</a>
+	   <p>
+		    Some text will go here.
+		    Some text will go here.
+		    Some text will go here.
+		    Some text will go here.
+		    Some text will go here.
+		    Some text will go here.
+		    Some text will go here.
+		    Some text will go here.
+	  </p>
+        <div class="readmore clear">
+		    <a href="#">Read More</a>
+		</div>
+	</div>
+			<div class="samepost clear">
+		<h2>Buttercup</h2>
+	<a href="#">
+		<img src="images/images/f220a39600028f1eb8efa7a6ec14a3a0.jpg" alt="Post Image">
+	</a>
+	   <p>
+		    Some text will go here.
+		    Some text will go here.
+		    Some text will go here.
+		    Some text will go here.
+		    Some text will go here.
+		    Some text will go here.
+		    Some text will go here.
+		    Some text will go here.
+	  </p>
+        <div class="readmore clear">
+		    <a href="#">Read More</a>
+		</div>
+	</div>
+		
+	</div>
+		<div class="sidebar clear">
+		    <div class="samesidebar">
+		        <h2>Sidebar one header</h2>
+			<p>
+            Sidebar text will go here. Sidebar text will go here.
+            Sidebar text will go here. Sidebar text will go here.
+            </p>
+            <p>Sidebar text.</p>
+		</div>
+						
+		<div class="samesidebar clear">
+		    <h2>Sidebar one header</h2>
+			<p>Sidebar text will go here. Sidebar text will go here.</p>
+            <p>Sidebar text will go here. Sidebar text will go here.
+			Sidebar text will go here.</p>
+            </div>
+			
+        <div class="samesidebar clear">
+		    <h2>
+				Sidebar one header
+			</h2>
+			<p>
+			Sidebar text will go here.sidebar text will go here.
+			</p>
+			<p>
+				Sidebar text will go here.sidebar text will go here.
+				sidebar text will go here.
+			</p>	
+        </div>
+	</div>
+</div>
+
+	<div class="footersection template clear">
+	    <p>This is footer</p>
+	</div>
+	
+ <script>
+  let slideIndex = 0;
+  showSlides();
+
+ function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slideIndex++;
+
+  if (slideIndex > slides.length) {
+    slideIndex = 1;
+  }
+
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className =
+      dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+
+  setTimeout(showSlides, 2000);
+}
+</script>
+</body>
+</html>
+
